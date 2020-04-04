@@ -1,7 +1,7 @@
 'use strict';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import plugins from 'plugins';
+import dispatcher from '@crsinc-xrd/xrd-dispatcher-module';
 
 class XrdMainGui extends React.Component {
     render() {
@@ -15,16 +15,16 @@ class XrdMainGui extends React.Component {
     }
 }
 
-plugins.on('init-main-gui', function (payload) {
+dispatcher.on('init-main-gui', function (payload) {
     ReactDOM.render(<XrdMainGui />, document.getElementById(payload.mainGuiId));
 });
 
-plugins.on('plugin-hand-shake', function (payload) {
+dispatcher.on('plugin-hand-shake', function (payload) {
     if (payload === 'main-menu') {
-        plugins.emit('init-main-menu', {elementId: 'main-menu'});
+        dispatcher.emit('init-main-menu', {elementId: 'main-menu'});
     } else if (payload === 'main-graph') {
-        plugins.emit('init-main-graph', {elementId: 'main-graph'});
+        dispatcher.emit('init-main-graph', {elementId: 'main-graph'});
     }
 });
 
-plugins.emit('plugin-hand-shake', 'xrd-main-gui');
+dispatcher.emit('plugin-hand-shake', 'xrd-main-gui');
