@@ -1,0 +1,25 @@
+{
+  "name": "@srsinc-xrd/xrd-main-gui-module",
+  "version": "0.1.0",
+  "description": "Main GUI plugin module for crsinc-xrd project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crsinc-xrd/xrd-main-gui-module.git"
+  },
+  "keywords": [
+    "srcinc-xrd",
+    "xrd",
+    "plugin",
+    "gui"
+  ],
+  "author": "Yury Yuryev <yu.yuryev.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crsinc-xrd/xrd-main-gui-module/issues"
+  },
+  "homepage": "https://github.com/crsinc-xrd/xrd-main-gui-module#readme"
+}
