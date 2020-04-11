@@ -1,7 +1,7 @@
 'use strict';
 var React = require('react');
 var ReactDOM = require('react-dom');
-var dispatcher = require('@crsinc-xrd/xrd-dispatch-module');
+var dispatcher = require('@crsincca/xrd-dispatch-module');
 
 class XrdMainGui extends React.Component {
     render() {

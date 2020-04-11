@@ -3,7 +3,7 @@
 
 describe('MainGui', function () {
 
-    var dispatcher = require('@crsinc-xrd/xrd-dispatch-module');
+    var dispatcher = require('@crsincca/xrd-dispatch-module');
 
     it('should send plugin-hand-shake message', function () {
         dispatcher.on('plugin-hand-shake', function (payload) {
