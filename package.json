@@ -1,6 +1,6 @@
 {
     "name": "@crsincca/xrd-main-gui-module",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "Main GUI plugin module for crsinc xrd project.",
     "main": "index.js",
     "scripts": {
